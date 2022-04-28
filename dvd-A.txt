@@ -1,0 +1,13 @@
+A – The business problem that I am hoping to solve is to understand the types of movies that are most popular amongst renters. Within the data, we have over ten genres being rented between two store locations within the years of 2005 and 2006. By understanding the rental trends for each store, we can see which type of movies are popular within our customer base as well as understanding a year-over-year trend of rentals. 
+
+    1 – The data we used for the report comes from an internal data set ranging from who the customer is, what the movies are about, specific actors, and many more attributes. For this assignment, I used information regarding to the rentals and movies specifically, not so much the customers and movie details.
+
+    2 – For the detailed table I chose to pull date from the Rental, Film, Category, and Inventory tables. This gives me a wide range of options to narrow down the data to answer my use case. 
+
+    3 – For the detailed table, I used the Rental ID, Movie Title (film.title), Movie Type (category.name), Store ID, and Rental Year (rental_date). For the Rental Year I used a function to convert the timestamp into a string, and only selecting the year, as the month and day isn’t relevant to this specific problem, but a simple tweak to the function can change this to include the month if needed. The summary table was narrowed down to Movie Type (category.name), Type Count (COUNT(movie_type)), Store ID, and Rental Year (rental_date). The Type Count will add together the different movies that share the same genre. This makes it easier to understand what type of movies are rented the most.
+
+    4 – The transformation that I thought would be most valuable is to convert the date into a varchar and break it down to only the year. As I mentioned above, this was what was needed for this specific report, but with it being a varchar, the user can simply change the output from just the year to whatever is needed.
+
+    5 – The detailed report will contain the data relevant to answering any problem or question regarding the rentals of specific type of movies, years, stores, and movie titles. This leaves a lot of room for adjustments to make small changes to the overall queries to change the question being asked. The summary report will point out specifically what store rents the most of ‘xyz-type’ of movies or even what store rents out the most musical or comedy movies.
+
+    6 – This report should be running at least once a month to understand the rental rates and to be able to allocate copies of movies from one store to another based on the performance of the rentals. This makes sure that each store can maximize the profitability of their rentals based on the customers interests. 
