@@ -1,5 +1,5 @@
 # DVD Shop Project
-Project to showcase my understanding of Advanced SQL. I used mySQL for my database tool.
+Project to showcase my understanding of Advanced SQL, using PostgreSQL and PgAdmin4.
 
 # Competencies
 
